@@ -1,0 +1,31 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    background-color: #231010b6;
+    gap: 0.5rem;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,100px);
+    padding: 2rem;
+    /* place-items: center; */
+}
+.item{
+    /* height: 100px;
+    width: 100px; */
+    color:white;
+    border: 2px solid black;
+    background-color: rgba(7, 212, 212, 0.816);
+    /* justify-self: start; */
+    /* align-items: stretch; */
+    /* place-self: end; */
+}

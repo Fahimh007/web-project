@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(8, 110, 234, 0.489);
+            border: 10px solid black;
+            /* display: flex; */
+            /* flex-wrap: wrap; */
+        }
+        .box1{
+            width: 250px;
+            height: 50px;
+            background-color: orange;
+            border-radius: 10px;
+            margin: 5px;
+            border: 2px solid yellow;
+            box-shadow: 10px 10px 10px rgba(10, 10, 9, 0.573);
+            animation-name: reight_movement;
+            position: relative;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            /* animation-delay: 0.5s; */
+            animation-timing-function: linear;
+            /* animation-timing-function: ease-in; */
+            /* animation-timing-function: ease-out; */
+            /* animation-timing-function: cubic-bezier(0.22,-0.26, 0.41, 1.06); */
+            animation-direction: alternate;
+            /* animation-fill-mode: forwards; */
+        } 
+        .box2{
+            width: 250px;
+            height: 50px;
+            background-color: orange;
+            border-radius: 10px;
+            margin: 10px;
+            border: 2px solid yellow;
+            box-shadow: 10px 10px 10px rgba(10, 10, 9, 0.573);
+            animation-name: left_movement;
+            position: relative;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            /* animation-delay: 0.5s; */
+            animation-timing-function: linear;
+            /* animation-timing-function: ease-in; */
+            /* animation-timing-function: ease-out; */
+            /* animation-timing-function: cubic-bezier(0.22,-0.26, 0.41, 1.06); */
+            animation-direction: alternate;
+            /* animation-fill-mode: forwards; */
+            animation-play-state: running;
+        }
+        .circle{
+            width: 50px;
+            height: 50px;
+            background-color: blueviolet;
+            border: 3px solid rgba(0, 0, 0, 0.516);
+            box-shadow: 5px 5px 10px;
+            border-radius: 50px;
+            /* margin: 10px; */
+            position: relative;
+            top:30%;
+            left: 40%;
+            animation:5s ease-in-out 0s infinite alternate none running circleMovement;
+        }
+        @keyframes circleMovement{
+            0%{
+                top:0%;
+                left: 0%;
+            }
+            30%{
+                top:20%;
+                left: 93%;
+            }
+            60%{
+                top:40%;
+                left: 0%;
+            }
+            100%{
+                top: 74%;
+                left: 93%;
+            }
+        }
+        @keyframes left_movement{
+            from{
+                top:500px;
+                left:495px;
+            }
+            to{
+                top:500px;
+                left:0px;
+            }
+        }
+        @keyframes reight_movement{
+            from{
+                top:0px;
+                left: 0px;
+            }
+            to{
+                top: 0px;
+                left: 500px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box1"> </div>
+        <div class="circle"> </div>
+        <div class="box2"> </div>
+    </div>
+</body>
+</html>

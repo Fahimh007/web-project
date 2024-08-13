@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            /* min-height: 900px; */
+            /* min-width: 600px; */
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            width: 300px;
+            height: 550px;
+            background-color: white;
+            border-radius: 18px;
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            padding: none;
+            gap: 15px;
+            box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.566);
+        }
+        .card img{
+            height: 30%;
+            width: 100%;
+            /* border-radius: 18px 18px 0px 0px; */
+            border-top-right-radius: 17px;
+            border-top-left-radius: 17px;
+        }
+        .card h2{
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card p{
+            text-align: center;
+            display: flex;
+            /* justify-content: center;
+            align-items: center; */
+        }
+        .card .smallcontainer{
+            display: flex;
+            flex-direction: row;
+            background-color: rgba(1, 16, 21, 0.905);
+            border-radius: 7px;
+            margin: 10px;
+            height: 60px;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);        }
+        .card .smallcontainer img{
+            width: 30px;
+            height: 30px;
+            justify-content: center;
+            margin: 10px;
+            border-radius: 60px;
+        }
+        .card .smallcontainer .music{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        }
+        .smallcontainer .music p{
+            color: white;
+        }
+        .card .smallcontainer .link{
+            display: flex;
+            width: 50%;
+            justify-content: center;
+            align-items: center;
+        }
+        .card .smallcontainer .link a{
+            font-size: 25px;
+            color: white;
+            text-decoration: none;
+        }
+        .card .btn{
+            display: flex;
+            flex-direction: column;
+        }
+        .card .btn button{
+            border-radius: 7px;
+            height: 40px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            color: white;
+            font-size: 17px;
+            background-color: rgba(10, 10, 22, 0.638);
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="img/ai.jpg" alt="ai pic">
+            <h2>Order Summary</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur unde necessitatibus nesciunt tenetur doloremque aperiam!</p>
+            <div class="smallcontainer">
+                <div class="music">
+                    <img src="img/music.jpg" alt="music">
+                    <p>Annual price<br>$999.9/year</br></p>
+                </div>
+                <div class="link">
+                    <a href="">change</a>
+                </div>
+            </div>
+            <div class="btn">
+                <button>Proceed to Payment</button>
+                <button>Cancel Order</button>
+            </div>   
+        </div>
+    </div>
+</body>
+</html>
