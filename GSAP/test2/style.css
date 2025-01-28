@@ -1,0 +1,63 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    background-image: url('https://uploads.sitepoint.com/wp-content/uploads/2017/03/1489014435Fotolia_94353427_Subscription_Monthly_M-768x432.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.nav .logo{
+    font-weight:bold;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.nav i{
+    font-size: 1.5rem;
+}
+
+.menu-content {
+    position: absolute; /* Already set */
+    height: 100%;
+    width: 40%;
+    background-color: rgba(13, 2, 53, 0.285);
+    right: -40%; /* Start off-screen */
+    top: 0;
+    backdrop-filter: blur(10px);
+    text-transform: uppercase;
+    padding-top: 3.5rem;
+    padding-left: 1rem;
+    font-size: x-large;
+    transition: none; /* Remove the transition */
+}
+
+
+.main i{
+    position: absolute;
+    color: white;
+    font-size: 2rem;
+    top: 1rem;
+    right: 1rem;
+}

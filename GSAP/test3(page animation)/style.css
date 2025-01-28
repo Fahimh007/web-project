@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(158, 204, 195, 0.745);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    height: 80%;
+    width: 80%;
+    position: relative;
+}
+
+main img{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+}
+
+main .text{
+    width: 400px;
+    height: 110px;
+    position: absolute;
+    overflow: hidden;
+    left: 80px;
+    bottom: 150px;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+main .text h1{
+    color:aqua;
+    top: 100px;
+    position: absolute;
+}
+

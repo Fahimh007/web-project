@@ -1,0 +1,2 @@
+backend/authentication/.gitignore
+backend/authentication/node_modules/@mapbox/node-pre-gyp/lib/build.js

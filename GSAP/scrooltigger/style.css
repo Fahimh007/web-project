@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.658);
+    /* overflow-x: hidden; */
+}
+
+.page1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+}
+
+.page2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(3, 12, 92, 0.89);
+}
+.page3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(173, 230, 184, 0.781);
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <style>
       *{
         margin: 0;
@@ -11,16 +12,117 @@
         box-sizing: border-box;
       } 
       body{
+        height: 100vh;
+        width: 100vw;
+        /* overflow-x: hidden; */
+      } 
+      #main{
         height: 100%;
         width: 100%;
-        padding: 1rem;
+        padding: 3rem 5rem;
+        background: #a079aee5;
+        display: flex;
+        position: relative;
+        /* overflow: hidden; */
       }
-
+      #overlay{
+        height: 100%;
+        width: 100%;
+        background: #bd599c53;
+      }
+      #part1{
+        height: 100%;
+        width: 20%;
+        background: #88509d5d;
+      }
+      #part2{
+        height: 100%;
+        width: 72%;
+        background: #b095f0a9;
+        background-image: url("https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        background-size: cover;
+        background-position: center;
+      }
+      #part3{
+        height: 100%;
+        width: 8%;
+        background: #88509d5d;
+      }
+      #text-div{
+        height: auto;
+        width: auto;
+        position: absolute;
+        color: white;  
+        top: 40%;
+        left: 18%;
+        transform: translate(50,-50%);
+      }
+      #text-div>h1{
+        font-size: 5rem;
+        font-family: preconnect;
+        text-transform: uppercase;
+        -webkit-text-stroke-width: 2px;
+        letter-spacing: 8px;
+        font-weight: 800;
+        line-height: 65px;
+      }
+      #small-img{
+        height: 350px;
+        width: 280px;
+        background-image: url('https://media.istockphoto.com/id/1140764346/photo/modern-millennial-woman-with-pink-hair.jpg?s=1024x1024&w=is&k=20&c=fxNAk-AVjsA14bmq857SxVvYFT-A_Qpm--6T2K0i83o=');
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        top: 35%;
+        right: 5%;
+        transform: translate(50,-50%);
+      }
+      #vartical-text{
+        /* background-color: tomato; */
+        transform: rotate(90deg);
+        /* background-color: tomato; */
+        position: absolute; 
+        right: -40%;
+        top: 1%;
+        transform-origin: 0% 0%;
+        /* background-color: red; */
+      }
+      #vartical-text>h1{
+        background-color: transparent;
+        font-size: 3rem;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-weight: 900;
+        -webkit-text-stroke-width: 3px;       
+        -webkit-text-stroke-color: rgba(255, 255, 255, 0.478);
+        color: transparent;
+        top: 50%;
+        left: 50%;
+        /* transform: translate(-50%,-50%); */
+      }
     </style>
 </head>
 <body>
-   <div class="box">
-    <div></div>
-   </div>
+  <div id="main">
+    <div id="part1"></div>
+    <div id="part2">
+      <div id="overlay"></div>
+    </div>
+    <div id="part3"></div>
+    <div id="text-div">
+      <h1>Nature</h1>
+      <h1>morte</h1>
+      <h1>for</h1>
+      <h1>Harper's</h1>
+    </div>
+    <div id="small-img">
+      <div id="overlay"></div> 
+    </div>
+    <div id="vartical-text">
+      <h1>Selection winter 2025</h1>
+    </div>
+  </div>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  <script src="script.js"></script>
 </body>
 </html>
