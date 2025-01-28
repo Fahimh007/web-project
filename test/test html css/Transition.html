@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* *{
+        margin: 0;
+        padding: 0;
+    } */
+    .box{
+        height: 400px;
+        width: 300px;
+        background-color: lightblue;
+        border: 2px soldi black;
+
+        transition-property: all;
+        transition-duration: 2s;
+        transition-delay: 1s;
+        transition-timing-function: linear;
+    }
+    .box:hover{
+        height: 700px;
+        background: blue;
+    }
+    .circle-box {
+        height: 200px;
+        width: 200px;
+        background-color: lightcoral;
+        border-radius: 50%;
+        border: 2px solid black;
+
+        transition-property: all;
+        transition-duration: 2s;
+        transition-delay: 1s;
+        transition-timing-function: linear;
+    }
+    .circle-box:hover {
+        height: 300px;
+        width: 300px;
+        background: red;
+    }
+
+    .rectangle {
+        height: 100px;
+        width: 200px;
+        background-color: lightgreen;
+        border: 2px solid black;
+
+        transition: transform 2s linear 1s;
+    }
+
+    .rectangle:hover {
+        transform: rotate(360deg);
+    }
+</style>
+<body>
+    <div class="box"></div>
+    <div class="circle-box"></div>
+    <div class="rectangle"></div>
+    
+</body>
+</html>

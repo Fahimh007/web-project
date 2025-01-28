@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form2</title>
+    <link rel="stylesheet" href="from2.css">
+    
+</head>
+<body>
+    <div>
+        <p>Fill up your personal information</p>
+        <fieldset>
+            <legend>HTML dummy form</legend>
+            <form>
+                <label for="uid">Enter username : </label>
+                <input type="text" id="uid" placeholder="username">
+                <br><br>
+                <label for="password">Enter password : </label>
+                <input type="password" id="password">
+                <br><br>
+    
+                <input type="submit" value="submit" id="submitButton">
+                <br><br>
+    
+                <label for="datepicker">Choose Date: </label>
+                <input type="date" id="datepicker">
+                <br><br>
+    
+                <lebel for="selectGender">Enter your gender</lebel>
+                <select name="gender" id="selectGender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="others">others</option>
+                </select>
+                <br><br>
+
+                <!-- Gender selection in radio button -->
+                 <div>
+                    <h3>Select your gender : </h3>
+                    <div style="padding-left: 2%;">
+                        <label for="radio1">Male</label>
+                        <input type="radio" name="radio" id="radio1">
+                        <br><br>
+        
+                        <label for="radio2">Female</label>
+                        <input type="radio" name="radio" id="radio2">
+                        <br><br>
+        
+                        <label for="radio3">others</label>
+                        <input type="radio" name="radio" id="radio3">
+                        <br><br>
+                    </div>
+                 </div>
+
+                 <!-- Gender selection in checkbox -->
+                 <div>
+                    <h3>Select your gender : </h3>
+                    <div style="padding-left: 2%;">
+                        <label for="radio1">Male</label>
+                        <input type="checkbox" name="checkbox1" id="checkbox1">
+                        <br><br>
+        
+                        <label for="radio2">Female</label>
+                        <input type="checkbox" name="checkbox2" id="checkbox2">
+                        <br><br>
+        
+                        <label for="radio3">others</label>
+                        <input type="checkbox" name="checkbox3" id="checkbox3">
+                        <br><br>
+                    </div>
+                 </div>
+
+                 <div>
+                    <leble id="fileselect1">Upload your profile picture</leble>
+                    <input type="file" name="fileselect1" id="fileselect1">
+                 </div>
+                 <br><br>
+    
+    
+                <textarea name="demoTextArea" id="txt1" placeholder="Enter text heare...."></textarea>
+            </form>
+        </fieldset>
+    </div>
+    <div>
+        <iframe 
+            src="https://www.youtube.com/embed/0PyHEaoZE1c?list=RD0PyHEaoZE1c&start_radio=1" 
+            frameborder="0" 
+            width="560" 
+            height="315" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+    
+    <div class="text1">
+        <p>hello world1</p>
+    </div>
+    <br><br>
+    <div class="text2">
+        <p>hello world2</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        /* *{
+            padding: 0px;
+            margin: 0px;
+        } */
+        div{
+            /* display: inline-block; */
+            border: 5px solid rgba(219, 12, 12, 0.864);
+        }
+        .container{
+           position: relative;
+           height: 1200px; 
+        }
+        img{
+            width: 300px;
+            height: 300px;
+        }
+        .cat4{
+            position: fixed;   
+        }
+        .cat3{
+            /* position: absolute; */
+            /* position: relative; */
+            /* position: fixed; */
+            position: sticky;
+            top: 200px;
+            left: 200px;
+        }
+        .box{
+            height: 1000px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    
+            <img src="cat1.jpg" alt="cat1" class="cat1">
+        
+    
+            <img src="cat2.jpg" alt="cat2" class="cat2">
+        
+    
+            <img src="cat3.jpg" alt="cat3" class="cat3">
+        
+    
+            <img src="cat4.jpeg" alt="cat4" class="cat4">
+        
+    </div>
+
+    <div class="box">
+
+    </div>
+</body>
+</html>
